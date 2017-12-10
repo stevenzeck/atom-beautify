@@ -5902,6 +5902,52 @@
       }
     }
   },
+  "powershell": {
+    "title": "PowerShell",
+    "type": "object",
+    "description": "Options for language PowerShell",
+    "collapsed": true,
+    "scope": [
+      "source.powershell"
+    ],
+    "beautifiers": [
+      "PowerShell Beautifier"
+    ],
+    "grammars": [
+      "PowerShell"
+    ],
+    "extensions": [
+      "ps1",
+      "psm1",
+      "psd1"
+    ],
+    "properties": {
+      "disabled": {
+        "title": "Disable Beautifying Language",
+        "order": -3,
+        "type": "boolean",
+        "default": false,
+        "description": "Disable PowerShell Beautification"
+      },
+      "default_beautifier": {
+        "title": "Default Beautifier",
+        "order": -2,
+        "type": "string",
+        "default": "PowerShell Beautifier",
+        "description": "Default Beautifier to be used for PowerShell",
+        "enum": [
+          "PowerShell Beautifier"
+        ]
+      },
+      "beautify_on_save": {
+        "title": "Beautify On Save",
+        "order": -1,
+        "type": "boolean",
+        "default": false,
+        "description": "Automatically beautify PowerShell files on save"
+      }
+    }
+  },
   "puppet": {
     "title": "Puppet",
     "type": "object",

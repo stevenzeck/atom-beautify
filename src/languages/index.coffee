@@ -56,6 +56,7 @@ module.exports = class Languages
     "pawn"
     "perl"
     "php"
+    "powershell"
     "puppet"
     "python"
     "r"
