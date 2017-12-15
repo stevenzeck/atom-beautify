@@ -10,13 +10,14 @@ module.exports = class PowerShellBeautifier extends Beautifier
   }
 
   beautify: (text, language, options) ->
-    @tempFile("input", text).then (tempFile) ->
+    @tempFile("input", text).then((tempFile) =>
       shell = require('node-powershell')
       ps = new shell()
       ps.addCommand("Edit-DTWBeautifyScript " + tempFile)
       ps.invoke()
-      .then () ->
+      .then(=>
         @readFile(tempFile)
+      )
       .catch (error) ->
         console.log error
-        ps.dispose()
+        ps.dispose())
