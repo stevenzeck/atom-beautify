@@ -21,4 +21,6 @@ module.exports = class PowerShellBeautifier extends Beautifier
         )
         .catch (error) ->
           ps.dispose()
-          reject error))
+          reject new Error(error)
+      )
+    )
