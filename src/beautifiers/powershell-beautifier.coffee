@@ -10,14 +10,15 @@ module.exports = class PowerShellBeautifier extends Beautifier
   }
 
   beautify: (text, language, options) ->
-    @tempFile("input", text).then((tempFile) =>
-      shell = require('node-powershell')
-      ps = new shell()
-      ps.addCommand("Edit-DTWBeautifyScript -StandardOutput #{tempFile}")
-      ps.invoke()
-      .then(=>
-        @readFile(tempFile)
-      )
-      .catch (error) ->
-        console.log error
-        ps.dispose())
+    return new @Promise((resolve, reject) =>
+      @tempFile("input", text).then((tempFile) ->
+        shell = require('node-powershell')
+        ps = new shell()
+        ps.addCommand("Edit-DTWBeautifyScript -StandardOutput #{tempFile}")
+        ps.invoke()
+        .then((stdout) ->
+          resolve stdout
+        )
+        .catch (error) ->
+          ps.dispose()
+          reject error))
