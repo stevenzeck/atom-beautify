@@ -13,7 +13,7 @@ module.exports = class PowerShellBeautifier extends Beautifier
     @tempFile("input", text).then((tempFile) =>
       shell = require('node-powershell')
       ps = new shell()
-      ps.addCommand("Edit-DTWBeautifyScript " + tempFile)
+      ps.addCommand("Edit-DTWBeautifyScript -StandardOutput #{tempFile}")
       ps.invoke()
       .then(=>
         @readFile(tempFile)
