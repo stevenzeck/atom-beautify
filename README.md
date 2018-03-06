@@ -122,6 +122,7 @@ Some of the supported beautifiers are developed for Node.js and are automaticall
 | Perltidy | :warning: Manual installation | :construction: Not an executable | :page_facing_up: Go to http://perltidy.sourceforge.net/ and follow the instructions. |
 | PHP-CS-Fixer | :warning: 2 executables | :warning: Only 1 of 2 executables | :whale: With [Docker](https://www.docker.com/):<br/>1. Install [PHP-CS-Fixer (`php-cs-fixer`)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) with `docker pull unibeautify/php-cs-fixer`<br/><br/>:bookmark_tabs: Manually:<br/>1. Install [PHP (`php`)](http://php.net/) by following http://php.net/manual/en/install.php<br/>2. Install [PHP-CS-Fixer (`php-cs-fixer`)](https://github.com/FriendsOfPHP/PHP-CS-Fixer) by following https://github.com/FriendsOfPHP/PHP-CS-Fixer#installation<br/> |
 | PHPCBF | :warning: 2 executables | :warning: Only 1 of 2 executables | :whale: With [Docker](https://www.docker.com/):<br/>1. Install [PHPCBF (`phpcbf`)](https://github.com/squizlabs/PHP_CodeSniffer) with `docker pull unibeautify/phpcbf`<br/><br/>:bookmark_tabs: Manually:<br/>1. Install [PHP (`php`)](http://php.net/) by following http://php.net/manual/en/install.php<br/>2. Install [PHPCBF (`phpcbf`)](https://github.com/squizlabs/PHP_CodeSniffer) by following https://github.com/squizlabs/PHP_CodeSniffer#installation<br/> |
+| PowerShell Beautifier | :white_check_mark: | :ok_hand: Not necessary | :smiley: Nothing! |
 | Prettier | :white_check_mark: | :ok_hand: Not necessary | :smiley: Nothing! |
 | Pretty Diff | :white_check_mark: | :ok_hand: Not necessary | :smiley: Nothing! |
 | Pug Beautify | :white_check_mark: | :ok_hand: Not necessary | :smiley: Nothing! |
@@ -192,6 +193,7 @@ See [all supported options in the documentation at  `docs/options.md`](docs/opti
 | Pawn | `Pawn` | | **[`Uncrustify`](https://github.com/uncrustify/uncrustify)** |
 | Perl | `Perl`, `Perl 6` |`.pl`, `.PL`, `.pm`, `.pod`, `.t` | **[`Perltidy`](http://perltidy.sourceforge.net/)** |
 | PHP | `PHP` |`.php`, `.module`, `.inc` | **[`PHP-CS-Fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer)**, [`PHPCBF`](http://php.net/manual/en/install.php), [`hh_format`](http://hhvm.com/) |
+| PowerShell | `PowerShell` |`.ps1`, `.psm1`, `.psd1` | **[`PowerShell Beautifier`](https://github.com/DTW-DanWard/PowerShell-Beautifier)** |
 | Puppet | `Puppet` |`.pp` | **[`puppet-lint`](http://puppet-lint.com/)** |
 | Python | `Python`, `MagicPython` |`.py` | **[`autopep8`](https://github.com/hhatto/autopep8)**, [`pybeautifier`](https://github.com/guyskk/pybeautifier), [`yapf`](https://github.com/google/yapf) |
 | R | `R` |`.r`, `.R` | **[`formatR`](https://github.com/yihui/formatR)** |
