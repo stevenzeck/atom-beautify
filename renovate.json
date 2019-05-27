@@ -3,13 +3,7 @@
     "config:base"
   ],
   "statusCheckVerify": true,
-  "ignoreDeps": [
-    "gherkin",
-    "expand-home-dir",
-    "typescript",
-    "typescript-formatter",
-    "tidy-markdown",
-    "underscore-plus",
-    "prettydiff2"
+  "baseBranches": [
+    "unibeautify"
   ]
 }
