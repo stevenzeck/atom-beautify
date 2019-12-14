@@ -177,7 +177,7 @@
     "ts-node": "8.2.0",
     "tslint-clean-code": "0.2.9",
     "tslint-microsoft-contrib": "6.2.0",
-    "typescript": "3.4.5"
+    "typescript": "3.7.3"
   },
   "scripts": {
     "build": "npm run lint && npm run clean && npm run compile && npm run docs",
